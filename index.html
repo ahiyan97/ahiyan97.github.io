@@ -1,30 +1,87 @@
-<section class="hero">
+<section id="home" class="hero">
+
+<div class="profile-card">
 
 <h1>ISLAM SANJIDA</h1>
 
-<p>
-Computer Software Major<br>
-Konkuk University
-</p>
+<p>Computer Software Major</p>
 
-<div class="resume-box">
+<p>Konkuk University</p>
 
-<h2>About Me</h2>
+<p>📧 sanjidaislam1306@gmail.com</p>
 
-<p>
-Hello! I am ISLAM SANJIDA, a Computer Software student at
-Konkuk University. I am passionate about software development,
-web technologies, programming, and creating useful applications.
-</p>
-
-<p>
-📧 Email: sanjidaislam1306@gmail.com
-</p>
+<a href="#translator" class="visit-btn">
+🌐 Visit My Website
+</a>
 
 </div>
 
-<a href="#translator" class="btn">
-🌐 Visit My Translator Website
-</a>
+</section>
+.visit-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:linear-gradient(45deg,#00c6ff,#8b5cf6);
+border-radius:40px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.4s;
+box-shadow:0 0 25px rgba(139,92,246,.5);
+}
+
+.visit-btn:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 0 40px rgba(139,92,246,.8);
+}
+
+<section id="translator">
+
+<div class="translator-card">
+
+<h2>English → Korean Translator</h2>
+
+<textarea id="englishText"
+placeholder="Enter English text"></textarea>
+
+<button onclick="translateText()">
+Translate
+</button>
+
+<div id="result"></div>
+
+</div>
 
 </section>
+
+<script>
+
+function translateText(){
+
+let text =
+document.getElementById("englishText")
+.value.toLowerCase();
+
+const dictionary = {
+
+"hello":"안녕하세요",
+"thank you":"감사합니다",
+"good morning":"좋은 아침입니다",
+"student":"학생",
+"computer":"컴퓨터",
+"software":"소프트웨어",
+"university":"대학교"
+
+};
+
+document.getElementById("result").innerHTML =
+dictionary[text] ||
+"Translation not found.";
+
+}
+
+</script>
+
+<a href="#translator">
+
+  <section id="translator">
