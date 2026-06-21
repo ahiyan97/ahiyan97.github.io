@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISLAM SANJIDA | Portfolio</title>
+<title>English to Korean Translator</title>
 
 <style>
 
@@ -14,200 +14,96 @@ box-sizing:border-box;
 font-family:'Segoe UI',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-background:linear-gradient(-45deg,#0f172a,#1e293b,#2563eb,#0f172a);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#2563eb,#7c3aed,#0ea5e9,#1e293b);
 background-size:400% 400%;
-animation:gradientMove 15s ease infinite;
+animation:gradient 15s ease infinite;
 color:white;
-overflow-x:hidden;
 }
 
-@keyframes gradientMove{
+@keyframes gradient{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
 
-/* HEADER */
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+.container{
+width:90%;
+max-width:700px;
+padding:40px;
+border-radius:25px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
 text-align:center;
-padding:20px;
-}
-
-header h1{
-font-size:65px;
-color:#60a5fa;
-overflow:hidden;
-white-space:nowrap;
-border-right:3px solid white;
-width:0;
-animation:
-typing 3s steps(20,end) forwards,
-blink .8s infinite,
-float 3s ease-in-out infinite;
-}
-
-header p{
-margin-top:20px;
-font-size:24px;
-color:#e2e8f0;
-animation:fadeIn 3s;
-}
-
-.btn{
-margin-top:30px;
-padding:15px 35px;
-border-radius:40px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:.4s;
-}
-
-.btn:hover{
-transform:scale(1.1);
-}
-
-@keyframes typing{
-from{width:0}
-to{width:100%}
-}
-
-@keyframes blink{
-50%{border-color:transparent}
-}
-
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0);}
+animation:fadeIn 1.5s;
 }
 
 @keyframes fadeIn{
 from{
 opacity:0;
+transform:translateY(50px);
 }
 to{
 opacity:1;
-}
-}
-
-/* SECTIONS */
-
-section{
-max-width:1000px;
-margin:auto;
-padding:80px 20px;
-}
-
-.card{
-background:rgba(255,255,255,0.1);
-backdrop-filter:blur(15px);
-padding:30px;
-border-radius:20px;
-margin-bottom:30px;
-transition:.5s;
-border:1px solid rgba(255,255,255,0.1);
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.02);
-box-shadow:0 20px 40px rgba(96,165,250,.4);
-}
-
-h2{
-margin-bottom:20px;
-color:#60a5fa;
-}
-
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:10px;
-}
-
-/* SKILL BARS */
-
-.skill{
-margin-bottom:20px;
-}
-
-.skill-name{
-margin-bottom:5px;
-}
-
-.bar{
-height:10px;
-background:#334155;
-border-radius:10px;
-overflow:hidden;
-}
-
-.progress{
-height:100%;
-background:#60a5fa;
-width:0;
-animation:fillBar 2s forwards;
-}
-
-.html{width:90%;}
-.css{width:85%;}
-.java{width:80%;}
-.python{width:75%;}
-
-@keyframes fillBar{
-from{
-width:0;
-}
-}
-
-/* SCROLL ANIMATION */
-
-.reveal{
-position:relative;
-transform:translateY(100px);
-opacity:0;
-transition:all 1s ease;
-}
-
-.reveal.active{
 transform:translateY(0);
-opacity:1;
+}
 }
 
-/* FOOTER */
+h1{
+margin-bottom:20px;
+font-size:40px;
+}
+
+p{
+margin-bottom:20px;
+color:#e2e8f0;
+}
+
+textarea{
+width:100%;
+height:150px;
+padding:15px;
+border:none;
+border-radius:15px;
+font-size:18px;
+resize:none;
+outline:none;
+}
+
+button{
+margin-top:20px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#3b82f6;
+color:white;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.result{
+margin-top:25px;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+min-height:80px;
+font-size:22px;
+}
 
 footer{
-background:#020617;
-text-align:center;
-padding:25px;
-margin-top:40px;
-color:#94a3b8;
-}
-
-@media(max-width:768px){
-
-header h1{
-font-size:38px;
-}
-
-header p{
-font-size:18px;
-}
-
+position:fixed;
+bottom:15px;
+font-size:14px;
+color:#e2e8f0;
 }
 
 </style>
@@ -215,131 +111,67 @@ font-size:18px;
 
 <body>
 
-<header>
+<div class="container">
 
-<h1>ISLAM SANJIDA</h1>
+<h1>🇬🇧 ➜ 🇰🇷 Translator</h1>
 
-<p>Computer Software Major | Konkuk University</p>
+<p>English to Korean Translation Tool</p>
 
-<a href="#about" class="btn">View Portfolio</a>
+<textarea id="englishText" placeholder="Type English here..."></textarea>
 
-</header>
+<button onclick="translateText()">Translate</button>
 
-<section id="about">
-
-<div class="card reveal">
-<h2>About Me</h2>
-<p>
-Hello! My name is ISLAM SANJIDA.
-I am a Computer Software student at Konkuk University.
-I am passionate about software development, web technologies,
-programming, databases, and emerging technologies.
-</p>
-</div>
-
-<div class="card reveal">
-<h2>Education</h2>
-<p>
-🎓 Konkuk University<br>
-Major: Computer Software
-</p>
-</div>
-
-<div class="card reveal">
-<h2>Technical Skills</h2>
-
-<div class="skill">
-<div class="skill-name">HTML</div>
-<div class="bar"><div class="progress html"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">CSS</div>
-<div class="bar"><div class="progress css"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">Java</div>
-<div class="bar"><div class="progress java"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">Python</div>
-<div class="bar"><div class="progress python"></div></div>
+<div class="result" id="result">
+Korean translation will appear here.
 </div>
 
 </div>
-
-<div class="card reveal">
-<h2>Projects</h2>
-
-<ul>
-<li>Personal Portfolio Website</li>
-<li>Student Information Management System</li>
-<li>Software Development Coursework Projects</li>
-<li>Web Design Practice Projects</li>
-</ul>
-
-</div>
-
-<div class="card reveal">
-<h2>Career Goal</h2>
-
-<p>
-My goal is to become a professional Software Engineer
-and contribute to innovative technology solutions that
-create positive impact around the world.
-</p>
-
-</div>
-
-<div class="card reveal">
-
-<h2>Contact Information</h2>
-
-<p>📧 Email: sanjidaislam1306@gmail.com</p>
-
-<p>🏫 Konkuk University</p>
-
-</div>
-
-</section>
 
 <footer>
-
-<p>
-© 2026 ISLAM SANJIDA | Computer Software Student
-</p>
-
+Created by ISLAM SANJIDA | Konkuk University
 </footer>
 
 <script>
 
-function reveal(){
+function translateText(){
 
-var reveals=document.querySelectorAll(".reveal");
+let text=document.getElementById("englishText").value.toLowerCase();
 
-for(var i=0;i<reveals.length;i++){
+let dictionary={
 
-var windowHeight=window.innerHeight;
-var elementTop=reveals[i].getBoundingClientRect().top;
-var elementVisible=100;
+"hello":"안녕하세요",
+"thank you":"감사합니다",
+"good morning":"좋은 아침입니다",
+"good night":"안녕히 주무세요",
+"how are you":"어떻게 지내세요?",
+"i love you":"사랑해요",
+"yes":"네",
+"no":"아니요",
+"welcome":"환영합니다",
+"student":"학생",
+"teacher":"선생님",
+"computer":"컴퓨터",
+"software":"소프트웨어",
+"university":"대학교",
+"friend":"친구",
+"food":"음식",
+"water":"물",
+"book":"책",
+"language":"언어",
+"study":"공부"
+};
 
-if(elementTop < windowHeight-elementVisible){
-
-reveals[i].classList.add("active");
-
+if(dictionary[text]){
+document.getElementById("result").innerHTML=dictionary[text];
+}
+else{
+document.getElementById("result").innerHTML=
+"Translation not found in dictionary.";
 }
 
 }
-
-}
-
-window.addEventListener("scroll",reveal);
-
-reveal();
 
 </script>
 
 </body>
-    </html>
+</html>
