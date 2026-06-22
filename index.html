@@ -1,87 +1,279 @@
-<section id="home" class="hero">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islam Sanjida — Resume</title>
+  <meta name="description" content="Resume of Islam Sanjida — Computer Software student at Konkuk University, Seoul." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div class="profile-card">
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Space Grotesk, sans-serif" font-weight="700"
+                font-size="15" fill="#fff">IS</text>
+        </svg>
+        <span class="logo-name">Islam Sanjida</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://en.dict.naver.com/#/main" target="_blank" rel="noopener" class="btn-visit">
+          Visit My Website
+        </a>
+        <button data-theme-toggle aria-label="Switch to light mode" class="theme-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<h1>ISLAM SANJIDA</h1>
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <div class="hero-badge">Computer Software · Konkuk University</div>
+      <h1 class="hero-name">Islam Sanjida</h1>
+      <p class="hero-tagline">
+        International student &amp; aspiring software developer passionate about building
+        impactful digital solutions. Based in Seoul, South Korea.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="#experience" class="btn-ghost">View Experience</a>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="dec-circle dec-1"></div>
+      <div class="dec-circle dec-2"></div>
+      <div class="dec-grid"></div>
+    </div>
+  </section>
 
-<p>Computer Software Major</p>
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">01</span> Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="edu-info">
+          <h3>Konkuk University</h3>
+          <p class="edu-degree">Bachelor of Science — Computer Software</p>
+          <p class="edu-meta">Seoul, South Korea · D-2 Visa</p>
+        </div>
+        <div class="edu-badge">Current</div>
+      </div>
+    </div>
+  </section>
 
-<p>Konkuk University</p>
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02</span> Experience</h2>
+      <div class="timeline">
 
-<p>📧 sanjidaislam1306@gmail.com</p>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Kitchen Assistant / Dishwasher</h3>
+              <span class="timeline-date">2023 – Present</span>
+            </div>
+            <p class="timeline-company">Various Restaurants · Seoul, South Korea</p>
+            <ul class="timeline-duties">
+              <li>Maintained kitchen hygiene and dishwashing operations with speed and precision</li>
+              <li>Assisted with food preparation, table setting, and general kitchen duties</li>
+              <li>Worked night shifts (5 PM – dawn), demonstrating strong stamina and reliability</li>
+              <li>Coordinated with kitchen staff ensuring smooth service flow</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Food Prep</span><span>Kitchen Ops</span><span>Night Shift</span><span>Teamwork</span>
+            </div>
+          </div>
+        </div>
 
-<a href="#translator" class="visit-btn">
-🌐 Visit My Website
-</a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Server / Front-of-House Staff</h3>
+              <span class="timeline-date">2022 – 2023</span>
+            </div>
+            <p class="timeline-company">Restaurant Part-time · Seoul, South Korea</p>
+            <ul class="timeline-duties">
+              <li>Delivered excellent customer service in a fast-paced restaurant environment</li>
+              <li>Managed table orders, billings, and customer interactions professionally</li>
+              <li>Collaborated with kitchen and floor teams to ensure quality dining experience</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Customer Service</span><span>Communication</span><span>Hospitality</span>
+            </div>
+          </div>
+        </div>
 
-</div>
+      </div>
+    </div>
+  </section>
 
-</section>
-.visit-btn{
-display:inline-block;
-margin-top:25px;
-padding:15px 35px;
-background:linear-gradient(45deg,#00c6ff,#8b5cf6);
-border-radius:40px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:0.4s;
-box-shadow:0 0 25px rgba(139,92,246,.5);
-}
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03</span> Skills</h2>
+      <div class="skills-grid">
 
-.visit-btn:hover{
-transform:translateY(-5px) scale(1.05);
-box-shadow:0 0 40px rgba(139,92,246,.8);
-}
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
 
-<section id="translator">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Software &amp; Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Microsoft Office Suite</li>
+            <li>CapCut (Video Editing)</li>
+          </ul>
+        </div>
 
-<div class="translator-card">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Bengali — Native</li>
+            <li>English — Professional</li>
+            <li>Korean — Basic (Learning)</li>
+          </ul>
+        </div>
 
-<h2>English → Korean Translator</h2>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Time Management</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
 
-<textarea id="englishText"
-placeholder="Enter English text"></textarea>
+      </div>
+    </div>
+  </section>
 
-<button onclick="translateText()">
-Translate
-</button>
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04</span> Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Open to opportunities in software development, internships, and part-time roles in Seoul.
+            Feel free to reach out anytime.
+          </p>
+          <div class="contact-items">
+            <a href="mailto:sanjidaabonti1997@gmail.com" class="contact-item">
+              <span class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              sanjidaabonti1997@gmail.com
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              Seoul, South Korea
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </span>
+              Konkuk University · Computer Software
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta-box">
+          <p>Looking for a translator tool?</p>
+          <a href="https://en.dict.naver.com/#/main" target="_blank" rel="noopener" class="btn-primary btn-large">
+            English ↔ Korean Translator
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div id="result"></div>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Islam Sanjida · Konkuk University, Seoul</p>
+    </div>
+  </footer>
 
-</div>
+  <script>
+    (function () {
+      const t = document.querySelector('[data-theme-toggle]'),
+        r = document.documentElement;
+      let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      r.setAttribute('data-theme', d);
+      if (t) {
+        t.innerHTML = d === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        t.addEventListener('click', () => {
+          d = d === 'dark' ? 'light' : 'dark';
+          r.setAttribute('data-theme', d);
+          t.innerHTML = d === 'dark'
+            ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+            : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        });
+      }
+    })();
 
-</section>
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
 
-<script>
-
-function translateText(){
-
-let text =
-document.getElementById("englishText")
-.value.toLowerCase();
-
-const dictionary = {
-
-"hello":"안녕하세요",
-"thank you":"감사합니다",
-"good morning":"좋은 아침입니다",
-"student":"학생",
-"computer":"컴퓨터",
-"software":"소프트웨어",
-"university":"대학교"
-
-};
-
-document.getElementById("result").innerHTML =
-dictionary[text] ||
-"Translation not found.";
-
-}
-
-</script>
-
-<a href="#translator">
-
-  <section id="translator">
+    const fadeEls = document.querySelectorAll('.edu-card, .timeline-item, .skill-card, .contact-grid');
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(el => fadeObs.observe(el));
+  </script>
+</body>
+</html>
